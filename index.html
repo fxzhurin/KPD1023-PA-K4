@@ -3,26 +3,59 @@
    <title>Berita Harian</title>
    <style>
     .header {
+     margin: auto;
+     overflow: hidden;
+     width: 100%;
+    }
+    .header_logo {
+    }
+    .header_logo img {
+     padding:90px;
+     width:90px;
+     float:left;
+    }
+    header_greting {
+     float: left;
+     text-align: center;
+     padding:90px;
+     fent-size:10mm;
+     font-weight: bold;
+    }
+    logo_media_sosial img {
+     width: 10px;
+     padding: 5px;
+     border-radius: 50%;
+     float: right;
+     margin-top: 50px;
+     .menu {
+      margin: auto;
+      width: 100%;
+      background-color: black;
+     }
+     ul {
+      overflow: hidden;
+      list-style-type: none;
+     }
+     a {
+      text-decoratiom: none;
+      display: block;
+      color: white;
+     }
+     li {
+      float: left;
+      padding: 15px;
+      rext-align: center;
+     }
+     li:hover {
+      background-color: antiquewhite;
+      font-weight: bold;
+     }
+     a:hover {
+      color: black;
+      font-weight: bold;
+     }
      
      
-     
-     
-     
-     
-     
-    .menu {
-      
-      
-      
-      
-      
-    .kandungan {
-       
-       
-       
-       
-  
-    .kaki {
    </style>
   </head>
   <body>
@@ -32,8 +65,8 @@
        <div class="header_greeting">BERITA HARIAN</div>
        </div>
    
-   <div class="gbr">
-       <img src="images/facebook.png" class="mygbr">
+   <div class="logi_media_sosial">
+       <img src="images/facebook.png"
        <img src="images/twitter.png"> 
        <img src="images/instagram.png">
        <img src="images/youtube.png"> 
@@ -41,7 +74,6 @@
    
     <!--MENU-->
       <div class ="menu">
-         Senarai Menu
          <ul>
             <li><a href="#">BERITA</a></li>
             <li><a href="#">SUKAN</a></li>
@@ -57,7 +89,7 @@
 
         </form>
         
-           <marquee behavior="scroll">
+           <marquee behavior="scroll" direction="up">
           <table border="6">
             <tr>
                <th>Bil</th>
