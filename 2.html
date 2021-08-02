@@ -7,87 +7,115 @@
         overflow: hidden;
         width: 100%;
       }
-
       .header_logo {
-      }
-
-      .header_logo img {
         padding: 90px;
-        width: 90px;
         float: left;
       }
-
+      .header_logo img {
+        width: 90px;
+      }
       .header_greeting {
         float: left;
+        margin: auto;
         text-align: center;
         padding: 90px;
         font-size: 10mm;
         font-weight: bold;
       }
-
-      .logo_media_sosial {
-        padding-top: 90px;
-        padding-right: 20px;
-
-      }
-
-      .logo_media_sosial img {
-        width: 20px;
+      .social-icon {
         padding: 5px;
         border-radius: 50%;
-        float: right;
         margin-top: 50px;
+        float: right;
+        padding-bottom: 50px;
       }
-      .menu {
-        margin: auto;
-        width: 100%;
-        background-color: black;
+      .social-icon img {
+        width: 20px;
       }
-
-      ul {
-        overflow: hidden;
+      .nav {
+        list-style: none;
+        background: black;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex;
+        align-items: center;
+      }
+      .nav ul {
         list-style-type: none;
+        margin: auto;
       }
-
-      a {
-        text-decoration: none;
-        display: block;
+      .nav li {
+        float: right;
         color: white;
       }
-
-      li {
-        float: left;
+      .nav a {
+        text-decoration: none;
+        display: block;
         padding: 15px;
-        text-align: center;
+        color: white;
       }
-
-      li:hover {
-        background-color: antiquewhite;
-        font-weight: bold;
-      }
-
-      a:hover {
+      .nav li:hover {
+        background: antiquewhite;
         color: black;
         font-weight: bold;
       }
-      .kandungan {
+      .nav a:hover {
+        color:black;
+        font-weight: bold;
+      }
+      .spacer {
+        flex-grow: 1;
+      }
+      .formright {
+        padding: 10px;
+      }
+      @media (max-width: 800px) {
+        nav .formright {
+          display: none;
+        }
+      }
+      .content {
+        background-color: gray;
+      }
+      table {
+        margin-left: 700px;
         background-color: white;
-        border:3px solid lightgray;
+        border: 5px solid lightgray;
         text-align: center;
+        width: 500px;
+        margin-top: 20px;
       }
-      .emas {
-        background-color: gold;
+      .white {
+        background-color: rgb(255,255,255)
       }
-      .perak {
-        background-color: silver;
+      .white {
+        background-color: rgb(255,255,255)
       }
-      .gangsa {
-        background-color: brown;
+      .gold {
+        background-color: rgb(255,215,0)
       }
-      .jumlah {
-        background-color: lightgreen;
+      .silver {
+        background-color: rgb(192,192,192)
       }
-
+      .brown {
+        background-color: rgb(165,42,42)
+      }
+      .lightgreen {
+        background-color: rgb(144, 238, 144)
+      }
+      .slider {
+        background-color: white;
+      }
+      .footer {
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+      }
+      *{
+        box-sizing: border-box;
+        margin: 0;
+      }
     </style>
   </head>
 
@@ -95,11 +123,11 @@
 
     <!--Header-->
     <div class="header">
-      <div class="header_logo"><img src="images/logo (1).png"></div>
+      <div class="header_logo"><img src="images/logo.png"></div>
       <div class="header_greeting">
         BERITA HARIAN
       </div>
-      <div class="logo_media_sosial">
+      <div class="social-icon">
         <img src="images/youtube.png">
         <img src="images/instagram.jpg">
         <img src="images/twitter.png">
@@ -107,27 +135,34 @@
       </div>
     </div>
 
-
     <!--Menu-->
-    <div class="menu">
-      <ul>
-        <li><a href="#">BERITA</a></li>
-        <li><a href="#">SUKAN</a></li>
-        <li><a href="#">DUNIA</a></li>
-        <li><a href="#">HIBURAN</a></li>
-      </ul>
-      <input type="text" class="text" placeholder="Masuk Kata Kunci">
-      <input type="submit" value="Cari" class="hantar">
-                                                               
-                                               
+    <div class="nav">
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Sukan</a></li>
+      <li><a href="#">Dunia</a></li>
+      <li><a href="#">Hiburan</a></li>
+
+      <div class="spacer"></div>
+
+      <form class="formright">
+        <input type="text" placeholder="Masuk kata kunci">
+        <button type="submit">Cari</button>
+      </form>
     </div>
 
     <!--Content-->
-     <div class="kandungan">
-
-       
-           <marquee behavior="scroll" direction="up">
-          <table border="6">
+    <div class="content">
+      <marquee direction="up">
+        <table border="2">
+          <colgroup>
+            <col class="white" />
+            <col class="white" />
+            <col class="gold" />
+            <col class="silver" />
+            <col class="brown" />
+            <col class="lightgreen" />
+          </colgroup>
+          <thead>
             <tr>
                <th>Bil</th>
                <th>Negara</th>
@@ -137,16 +172,14 @@
                <th>Jumlah</th>
             </tr>
             <tr>
-              <div class="emas">
                <td>1</td>
                <td>China</td>
                <td>27</td>
-               <td>45</td> 
+               <td>45</td>
                <td>16</td>
                <td>88</td>
             </tr>
             <tr>
-              <div class="perak">
                <td>2</td>
                <td>Japan</td>
                <td>22</td>
@@ -155,8 +188,7 @@
                <td>53</td>
             </tr>
             <tr>
-              <div class="gangsa">
-              <td>3</td>
+               <td>3</td>
                <td>America</td>
                <td>20</td>
                <td>56</td>
@@ -164,20 +196,28 @@
                <td>78</td>
             </tr>
             <tr>
-              <div class="jumlah">
                <td>4</td>
-               <td>Roc</td>
+               <td>ROC</td>
                <td>15</td>
                <td>24</td>
                <td>32</td>
                <td>61</td>
             </tr>
-           </table>
-         </marquee>
-      </div>
-
+        </table>
+      </marquee>
+      <br>
+      <!--Slider-->
+      <div class="slider">
+      <marquee direction="left">
+        <img src="images/football.png"><font>Bola Sepak</font>
+        <img src="images/rugby.png"<font>Ragbi</font>
+        <img src="images/netball.png"<font>Bola Jaring</font>
+        <img src="images/swimming.png"<font>Berenang</font>
+      </marquee>
+     
     <!--Footer-->
-
+    <div class="footer">
+      <font>Copyright &copy; Berita Harian, 2021</font>
+    </div>
   </body>
-
 </html>
