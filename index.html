@@ -1,110 +1,168 @@
 <html>
- <head>
-   <title>Berita Harian</title>
-   <style>
-    .header {
+  <head>
+    <title>BERITA HARIAN</title>
+    <style>
+      .header {
         margin: auto;
         overflow: hidden;
         width: 100%;
       }
-
       .header_logo {
-      }
-
-      .header_logo img {
         padding: 90px;
-        width: 90px;
         float: left;
       }
-
+      .header_logo img {
+        width: 90px;
+      }
       .header_greeting {
         float: left;
+        margin: auto;
         text-align: center;
         padding: 90px;
         font-size: 10mm;
         font-weight: bold;
       }
-
-      .logo_media_sosial {
-        padding-top: 90px;
-        padding-right: 20px;
-
-      }
-
-      .logo_media_sosial img {
-        width: 20px;
+      .social-icon {
         padding: 5px;
         border-radius: 50%;
-        float: right;
         margin-top: 50px;
+        float: right;
+        padding-bottom: 50px;
       }
-      .menu {
-        margin: auto;
-        width: 100%;
-        background-color: black;
+      .social-icon img {
+        width: 20px;
       }
-
-      ul {
-        overflow: hidden;
+      .nav {
+        list-style: none;
+        background: black;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex;
+        align-items: center;
+      }
+      .nav ul {
         list-style-type: none;
+        margin: auto;
       }
-
-      a {
-        text-decoration: none;
-        display: block;
+      .nav li {
+        float: right;
         color: white;
       }
-
-      li {
-        float: left;
+      .nav a {
+        text-decoration: none;
+        display: block;
         padding: 15px;
-        text-align: center;
+        color: white;
       }
-
-      li:hover {
-        background-color: antiquewhite;
-        font-weight: bold;
-      }
-
-      a:hover {
+      .nav li:hover {
+        background: antiquewhite;
         color: black;
         font-weight: bold;
       }
-   
-    
-   </style>
+      .nav a:hover {
+        color:black;
+        font-weight: bold;
+      }
+      .spacer {
+        flex-grow: 1;
+      }
+      .formright {
+        padding: 10px;
+      }
+      @media (max-width: 800px) {
+        nav .formright {
+          display: none;
+        }
+      }
+      .content {
+        background-color: gray;
+      }
+      table {
+        margin-left: 700px;
+        background-color: white;
+        border: 5px solid lightgray;
+        text-align: center;
+        width: 500px;
+        margin-top: 20px;
+      }
+      .white {
+        background-color: rgb(255,255,255)
+      }
+      .white {
+        background-color: rgb(255,255,255)
+      }
+      .gold {
+        background-color: rgb(255,215,0)
+      }
+      .silver {
+        background-color: rgb(192,192,192)
+      }
+      .brown {
+        background-color: rgb(165,42,42)
+      }
+      .lightgreen {
+        background-color: rgb(144, 238, 144)
+      }
+      .slider {
+        background-color: white;
+      }
+      .footer {
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+      }
+      *{
+        box-sizing: border-box;
+        margin: 0;
+      }
+    </style>
   </head>
+
   <body>
-     <!--HEADER-->
-      <div class="header">
-          <div class="header_logo"><img src="images/logo (1).png"></div>
-       <div class="header_greeting">BERITA HARIAN</div>
-       </div>
-   
-   <div class="logi_media_sosial">
-       <div class="logo_media_sosial">
+
+    <!--Header-->
+    <div class="header">
+      <div class="header_logo"><img src="images/logo.png"></div>
+      <div class="header_greeting">
+        BERITA HARIAN
+      </div>
+      <div class="social-icon">
         <img src="images/youtube.png">
         <img src="images/instagram.jpg">
         <img src="images/twitter.png">
-        <img src="images/facebook.png"> 
-      </div> 
-   
-    <!--MENU-->
-      <div class ="menu">
-         <ul>
-            <li><a href="#">BERITA</a></li>
-            <li><a href="#">SUKAN</a></li>
-            <li><a href="#">DUNIA</a></li>
-            <li><a href="#">HIBURAN</a></li>
-         </ul> 
+        <img src="images/facebook.png">
       </div>
-   
-   <!--CONTENT-->
-      <div class="kandungan">
+    </div>
 
-       
-           <marquee behavior="scroll" direction="up">
-          <table border="6">
+    <!--Menu-->
+    <div class="nav">
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Sukan</a></li>
+      <li><a href="#">Dunia</a></li>
+      <li><a href="#">Hiburan</a></li>
+
+      <div class="spacer"></div>
+
+      <form class="formright">
+        <input type="text" placeholder="Masuk kata kunci">
+        <button type="submit">Cari</button>
+      </form>
+    </div>
+
+    <!--Content-->
+    <div class="content">
+      <marquee direction="up">
+        <table border="2">
+          <colgroup>
+            <col class="white" />
+            <col class="white" />
+            <col class="gold" />
+            <col class="silver" />
+            <col class="brown" />
+            <col class="lightgreen" />
+          </colgroup>
+          <thead>
             <tr>
                <th>Bil</th>
                <th>Negara</th>
@@ -117,7 +175,7 @@
                <td>1</td>
                <td>China</td>
                <td>27</td>
-               <td>45</td> 
+               <td>45</td>
                <td>16</td>
                <td>88</td>
             </tr>
@@ -130,7 +188,7 @@
                <td>53</td>
             </tr>
             <tr>
-              <td>3</td>
+               <td>3</td>
                <td>America</td>
                <td>20</td>
                <td>56</td>
@@ -139,32 +197,27 @@
             </tr>
             <tr>
                <td>4</td>
-               <td>Roc</td>
+               <td>ROC</td>
                <td>15</td>
                <td>24</td>
                <td>32</td>
                <td>61</td>
             </tr>
-           </table>
-         </marquee>
-      </div>
-    <!--SLIDER-->
+        </table>
+      </marquee>
+      <br>
+      <!--Slider-->
       <div class="slider">
-       
-       <marquee direction=""> 
-        <img src="images/football.png" class="mySlides">
-        Bola sepak
-        <img src="images/rugby.png" class="mySlides">
-        Ragbi
-        <img src="images/netball.png" class="mySlides">
-        Bola jaring
-         <img src="images/swimming.png" class="mySlides">
-        Berenang
-      </div>
-       
-         <!--FOOTER-->
-      <div class="kaki">
-          <font>Copyright &copy; Berita Harian,2021 </font>
-      </div>
+      <marquee direction="left">
+        <img src="images/football.png"><font>Bola Sepak</font>
+        <img src="images/rugby.png"<font>Ragbi</font>
+        <img src="images/netball.png"<font>Bola Jaring</font>
+        <img src="images/swimming.png"<font>Berenang</font>
+      </marquee>
+     
+    <!--Footer-->
+    <div class="footer">
+      <font>Copyright &copy; Berita Harian, 2021</font>
+    </div>
   </body>
 </html>
