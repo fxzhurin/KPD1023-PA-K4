@@ -1,4 +1,5 @@
 <html>
+
   <head>
     <title>BERITA HARIAN</title>
     <style>
@@ -7,115 +8,136 @@
         overflow: hidden;
         width: 100%;
       }
-      .header_logo {
+
+      .header_logo img {
         padding: 90px;
+        width: 90px;
         float: left;
       }
-      .header_logo img {
-        width: 90px;
-      }
+
       .header_greeting {
         float: left;
-        margin: auto;
         text-align: center;
         padding: 90px;
         font-size: 10mm;
         font-weight: bold;
       }
-      .social-icon {
+
+      .logo_media_sosial {
+        padding-top: 90px;
+        padding-right: 20px;
+
+      }
+
+      .logo_media_sosial img {
+        width: 20px;
         padding: 5px;
         border-radius: 50%;
+        float: right;
         margin-top: 50px;
-        float: right;
-        padding-bottom: 50px;
       }
-      .social-icon img {
-        width: 20px;
-      }
-      .nav {
-        list-style: none;
-        background: black;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        justify-content: flex;
-        align-items: center;
-      }
-      .nav ul {
-        list-style-type: none;
-        margin: auto;
-      }
-      .nav li {
-        float: right;
+
+      .menu {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        background-color: black;
         color: white;
       }
-      .nav a {
+
+      .menu ul {
+        list-style-type: none;
+        margin: auto;
+        background-color: ;
+        color: ;
+        overflow: hidden;
+      }
+
+      .menu li {
+        float: left;
+      }
+
+      .menu a {
         text-decoration: none;
         display: block;
         padding: 15px;
         color: white;
       }
-      .nav li:hover {
-        background: antiquewhite;
+
+      .menu li:hover {
+        background-color: antiquewhite;
+      }
+
+      .menu a:hover {
         color: black;
         font-weight: bold;
       }
-      .nav a:hover {
-        color:black;
-        font-weight: bold;
-      }
-      .spacer {
-        flex-grow: 1;
-      }
-      .formright {
-        padding: 10px;
-      }
-      @media (max-width: 800px) {
-        nav .formright {
-          display: none;
-        }
-      }
-      .content {
-        background-color: gray;
-      }
-      table {
-        margin-left: 700px;
-        background-color: white;
-        border: 5px solid lightgray;
+
+      .form {
+        float: right;
+        margin: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding-top: 5px;
+        height: 30px;
         text-align: center;
-        width: 500px;
+      }
+
+      .form:hover {
+        background-color: lightcoral;
+      }
+
+      .hantar {
+        float: right;
+        margin: 5px;
+        border-radius: 5px;
+        padding-top: 5px;
+        height: 30px;
+        text-align: center;
+      }
+
+      .hantar:hover {
+        background-color: lightcoral;
+      }
+
+      .kandungan {
+        background-color: grey;
+        margin-top: 5px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .table1 {
+        width: 300px;
+        border-style: solid;
+        border: 3px;
+        background-color: white;
+        border-color: lightgray;
+        margin: auto;
+        text-align: center;
+      }
+
+      .slider {
+        margin-top: 10px;
+        border-bottom: 5px solid;
+        padding-bottom: 5px;
+      }
+
+      .slider img {
+        width: 80px;
+        padding: 5px;
+        border-radius: 50%;
         margin-top: 20px;
       }
-      .white {
-        background-color: rgb(255,255,255)
-      }
-      .white {
-        background-color: rgb(255,255,255)
-      }
-      .gold {
-        background-color: rgb(255,215,0)
-      }
-      .silver {
-        background-color: rgb(192,192,192)
-      }
-      .brown {
-        background-color: rgb(165,42,42)
-      }
-      .lightgreen {
-        background-color: rgb(144, 238, 144)
-      }
-      .slider {
-        background-color: white;
-      }
+
       .footer {
-        text-align: center;
-        padding: 5px;
         background-color: black;
         color: white;
+        text-align: center;
+        padding: 10px;
       }
-      *{
-        box-sizing: border-box;
-        margin: 0;
-      }
+
     </style>
   </head>
 
@@ -123,11 +145,11 @@
 
     <!--Header-->
     <div class="header">
-      <div class="header_logo"><img src="images/logo.png"></div>
+      <div class="header_logo"><img src="images/logo (1).png"></div>
       <div class="header_greeting">
         BERITA HARIAN
       </div>
-      <div class="social-icon">
+      <div class="logo_media_sosial">
         <img src="images/youtube.png">
         <img src="images/instagram.jpg">
         <img src="images/twitter.png">
@@ -135,89 +157,86 @@
       </div>
     </div>
 
+
     <!--Menu-->
-    <div class="nav">
-      <li><a href="#">Berita</a></li>
-      <li><a href="#">Sukan</a></li>
-      <li><a href="#">Dunia</a></li>
-      <li><a href="#">Hiburan</a></li>
-
-      <div class="spacer"></div>
-
-      <form class="formright">
-        <input type="text" placeholder="Masuk kata kunci">
-        <button type="submit">Cari</button>
-      </form>
+    <div class="menu">
+      <input type="submit" value="Cari" class="hantar">
+      <input type="text" class="form" placeholder="Masuk Kata Kunci">
+      <ul>
+        <li><a href="#">BERITA</a></li>
+        <li><a href="#">SUKAN</a></li>
+        <li><a href="#">DUNIA</a></li>
+        <li><a href="#">HIBURAN</a></li>
+      </ul>
     </div>
 
     <!--Content-->
-    <div class="content">
+    <div class="kandungan">
       <marquee direction="up">
-        <table border="2">
-          <colgroup>
-            <col class="white" />
-            <col class="white" />
-            <col class="gold" />
-            <col class="silver" />
-            <col class="brown" />
-            <col class="lightgreen" />
-          </colgroup>
-          <thead>
-            <tr>
-               <th>Bil</th>
-               <th>Negara</th>
-               <th>Emas</th>
-               <th>Perak</th>
-               <th>Gangsa</th>
-               <th>Jumlah</th>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>China</td>
-               <td>27</td>
-               <td>45</td>
-               <td>16</td>
-               <td>88</td>
-            </tr>
-            <tr>
-               <td>2</td>
-               <td>Japan</td>
-               <td>22</td>
-               <td>12</td>
-               <td>19</td>
-               <td>53</td>
-            </tr>
-            <tr>
-               <td>3</td>
-               <td>America</td>
-               <td>20</td>
-               <td>56</td>
-               <td>2</td>
-               <td>78</td>
-            </tr>
-            <tr>
-               <td>4</td>
-               <td>ROC</td>
-               <td>15</td>
-               <td>24</td>
-               <td>32</td>
-               <td>61</td>
-            </tr>
+        <table class="table1">
+          <tr>
+            <th>Bil</th>
+            <th>Negara</th>
+            <th style="background-color: gold">Emas</th>
+            <th style="background-color: silver">Perak</th>
+            <th style="background-color: brown">Gangsa</th>
+            <th style="background-color: lightgreen">Jumlah</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>China</td>
+            <td style="background-color: gold">27</td>
+            <td style="background-color: silver">45</td>
+            <td style="background-color: brown">16</td>
+            <td style="background-color: lightgreen">88</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Japan</td>
+            <td style="background-color: gold">22</td>
+            <td style="background-color: silver">12</td>
+            <td style="background-color: brown">19</td>
+            <td style="background-color: lightgreen">53</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>America</td>
+            <td style="background-color: gold">20</td>
+            <td style="background-color: silver">56</td>
+            <td style="background-color: brown">2</td>
+            <td style="background-color: lightgreen">78</td>
+          </tr>
+          <tr>
+            <td style="background-color: ">4</td>
+            <td>ROC</td>
+            <td style="background-color: gold">15</td>
+            <td style="background-color: silver">24</td>
+            <td style="background-color: brown">32</td>
+            <td style="background-color: lightgreen">61</td>
+          </tr>
         </table>
       </marquee>
-      <br>
-      <!--Slider-->
-      <div class="slider">
+    </div>
+
+    <!--Slider-->
+    <div class="slider">
       <marquee direction="left">
-        <img src="images/football.png"><font>Bola Sepak</font>
-        <img src="images/rugby.png"<font>Ragbi</font>
-        <img src="images/netball.png"<font>Bola Jaring</font>
-        <img src="images/swimming.png"<font>Berenang</font>
+        <img src="images/football.png">
+        <font>Bola Sepak</font>
+        <img src="images/rugby.png">
+        <font>Ragbi</font>
+        <img src="images/netball.png">
+        <font>Bola Jaring</font>
+        <img src="images/swimming.png">
+        <font>Berenang</font>
       </marquee>
-     
+    </div>
+
     <!--Footer-->
     <div class="footer">
       <font>Copyright &copy; Berita Harian, 2021</font>
     </div>
+
   </body>
+
 </html>
